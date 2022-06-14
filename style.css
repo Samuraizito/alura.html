@@ -1,0 +1,191 @@
+:root {
+    --branco-principa: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --efito-do-botao: #75adee;
+
+    --fonte-principal: 'Inter';
+    }   
+
+
+body {
+    background: var(--cor-fundo);
+    color: var(--branco-principa);
+
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+
+    }
+*{
+    margin: 0;
+    padding: 0;
+    }
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    align-items: center;
+    text-align: center;
+    }
+.container {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+
+    font-family: var(--fonte-principal);
+    }
+.container__titulo {
+    font-size: 24px;
+    }
+.container__botao {
+    background-color: var(--botao-azul);
+
+    margin-bottom: 1em;
+
+    color: var(--branco-principa);
+    padding: 1em;
+    border-radius: 5px;
+
+    display: block;
+    text-decoration: none;
+    }
+.container__botao:hover {
+    transition: 400ms;
+    font-size: 1.2em;
+    background-color: var(--efito-do-botao);
+    color: black;
+
+    font-weight: 600;
+}
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principa);
+    }
+.container__aviso {
+    font-size: 12px;
+    color:var(--cinza-secundario)
+    
+    }
+.container__imagem {
+    margin: 3rem 0 2rem 0;
+
+    }
+.container__caixa {
+    margin: 0 6em;
+    }
+
+
+
+
+.imagem__secundario {
+    width: 80%;
+    }
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+    }
+.descricao__titulo--destaque {
+    font-size: 48px;
+    font-weight: 700;
+
+    color: var(--branco-principa);
+    margin-bottom: 0.1em;
+    }
+.descricao__titulo {
+    color:var(--cinza-secundario);
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 24px;
+    }
+.botao__container--terceiro {
+    display:inline-block;
+
+    margin-top: 1em;
+
+    text-decoration: none;
+    color:var(--branco-principa);
+
+    border-radius: 8px;
+    background-color: var(--botao-azul);
+
+    padding: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    }
+
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+
+    margin: 5em;
+
+    list-style-type: none;
+
+    font-weight: 700;
+    font-size: 32px;
+    }
+.dispositivos__titulo--descricao {
+    text-align: center;
+    }
+.dispositivos__titulo {
+    font-size: 48px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+
+    text-align: center;
+    }
+
+.logo__alura {
+    text-align: center;
+    margin-bottom: 2em; 
+
+    width: calc(100% - 102px)
+}
+.opcoes {
+    text-align: center;
+}
+
+.lista {
+    display: inline-block;
+    margin: 1em;
+}
+
+.lista__link {
+    justify-content: space-around;
+
+    color: var(--branco-principa);
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.informacoes__copyright {
+    color: var(--cinza-secundario);
+    margin: 1em 18em;
+
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+}
+
+.lista__link:hover {
+    transition: 400ms;
+    color: red;
+    font-size: 18px;
+
+}
+.lista__link:active {
+    transition: none;
+    color: green;
+}
