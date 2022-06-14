@@ -181,7 +181,7 @@ body {
 
 .lista__link:hover {
     transition: 400ms;
-    color: red;
+    color: blue;
     font-size: 18px;
 
 }
